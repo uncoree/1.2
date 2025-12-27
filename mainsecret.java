@@ -8,13 +8,13 @@ public class Main {
 
         int secret = rnd.nextInt(10) + 1;
         int attempts = 3;
-        System.out.println("я загадал число от 1 до 10. попробуй угадать 😼");
+        System.out.println("я загадал число от 1 до 10. попробуй угадать ");
 
         for (int i = 1; i <= attempts; i++) {
             int guess = sc.nextInt();
 
             if (guess == secret) {
-                System.out.println("вау, ты угадал с " + i + " попытки 🎉");
+                System.out.println("вау, ты угадал с " + i + " попытки ");
                 return;
             } else {
                 System.out.println("неа, мимо. осталось попыток: " + (attempts - i));
@@ -24,3 +24,4 @@ public class Main {
         System.out.println("игра окончена. число было: " + secret);
     }
 }
+
